@@ -1,0 +1,26 @@
+import java.util.*;
+public class MedianOfBST {
+    class Tree
+{
+    public static void trav(Node root, ArrayList<Integer> inorder){
+        if(root == null) return ;
+        trav(root.left, inorder);
+        inorder.add(root.data);
+        trav(root.right, inorder);
+    }
+    
+    public static float findMedian(Node root)
+    {   
+        ArrayList<Integer> inorder = new ArrayList<>();
+        
+        trav(root, inorder);
+        // System.out.println(inorder);
+        
+        if(inorder.size() %2 != 0) return (float)inorder.get(inorder.size()/2);
+        else {
+            int n = inorder.size();
+            return (float)(inorder.get((n-1)/2) + inorder.get((n+1)/2))/2;
+        }
+    }
+}
+}

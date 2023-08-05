@@ -6,8 +6,7 @@ public class ReverseStack {
 { 
     static void reverse(Stack<Integer> s)
     {
-        // add your code here
-          // add your code here
+       
         // s.reverse();
         ArrayList<Integer>ar=new ArrayList<>();
         for(int i=s.size()-1 ;i>=0;i--){

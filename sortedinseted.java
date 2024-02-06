@@ -29,9 +29,4 @@ public class sortedinseted {
     }
 }
 
-..... see less
-
-0
-
-0
 }

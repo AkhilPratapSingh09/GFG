@@ -19,4 +19,5 @@ public class lotraver {
         return list;
     }
 }
+
 }
